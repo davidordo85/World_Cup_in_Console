@@ -1,7 +1,10 @@
 import { teams } from './teams/teams.js';
-import League from './league/League.js';
+import PointsBasedLeague from './league/PointsBasedLeague.js';
+import ShowInConsole from './ShowInConsole/ShowInConsole.js';
 
-const group = new League('group', teams);
-console.log(group);
+const group = new PointsBasedLeague('group', teams);
+
 group.scheduleMatchDays();
-console.log(group.matchDaySchedule);
+group.start();
+
+const show = new ShowInConsole(group.summaries);
