@@ -19,7 +19,6 @@ export default class Schedule extends League {
       }
       this.matchDaySchedule.push(matchDay);
     }
-    console.log(this.mathDaySchedule);
   }
 
   getTeamNames() {
