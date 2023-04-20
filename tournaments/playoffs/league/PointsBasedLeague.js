@@ -30,10 +30,6 @@ export default class PointsBasedLeague extends ScheduleLeague {
     };
   }
 
-  generateGoals() {
-    return Math.round(Math.random() * 5);
-  }
-
   play(match) {
     const homeGoals = this.generateGoals();
     const awayGoals = this.generateGoals();

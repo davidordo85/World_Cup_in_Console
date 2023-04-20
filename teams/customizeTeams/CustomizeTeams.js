@@ -26,4 +26,8 @@ export default class CustomizeTeams {
   getTeamNames() {
     return this.teams.map(team => team.name);
   }
+
+  generateGoals() {
+    return Math.round(Math.random() * 5);
+  }
 }
