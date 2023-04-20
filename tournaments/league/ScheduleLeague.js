@@ -3,7 +3,7 @@ import League from './League.js';
 import {
   LOCAL_TEAM,
   AWAY_TEAM,
-} from '../../../teams/customizeTeams/CustomizeTeams.js';
+} from '../../teams/customizeTeams/CustomizeTeams.js';
 
 export default class ScheduleLeague extends League {
   constructor(name, teams = [], config = {}) {

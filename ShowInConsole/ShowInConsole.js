@@ -1,6 +1,6 @@
 import { teams } from '../teams/teams.js';
-import PointsBasedLeague from '../tournaments/playoffs/league/PointsBasedLeague.js';
-import Playoffs from '../tournaments/playoffs/playoffs/Playoffs.js';
+import PointsBasedLeague from '../tournaments/league/PointsBasedLeague.js';
+import Playoffs from '../tournaments/playoffs/Playoffs.js';
 import Letter from '../utils/numberToLetter.js';
 import shuffle from '../utils/shuffle.js';
 

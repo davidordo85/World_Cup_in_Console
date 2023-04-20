@@ -1,8 +1,8 @@
-import CustomizeTeams from '../../../teams/customizeTeams/CustomizeTeams.js';
+import CustomizeTeams from '../../teams/customizeTeams/CustomizeTeams.js';
 import {
   LOCAL_TEAM,
   AWAY_TEAM,
-} from '../../../teams/customizeTeams/CustomizeTeams.js';
+} from '../../teams/customizeTeams/CustomizeTeams.js';
 
 export default class SchedulePlayoffs extends CustomizeTeams {
   constructor(name, teams = []) {

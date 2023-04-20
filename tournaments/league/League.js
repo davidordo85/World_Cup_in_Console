@@ -1,4 +1,4 @@
-import CustomizeTeams from '../../../teams/customizeTeams/CustomizeTeams.js';
+import CustomizeTeams from '../../teams/customizeTeams/CustomizeTeams.js';
 
 export default class League extends CustomizeTeams {
   constructor(name, teams = [], config = {}) {
