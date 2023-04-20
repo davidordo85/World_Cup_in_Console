@@ -1,5 +1,3 @@
-import ShowInConsole from './ShowInConsole/ShowInConsole.js';
+import ShowInConsole from './showInConsole/ShowInConsole.js';
 
-const show = new ShowInConsole('World Cup');
-
-console.log('equipos para play off', show.teamsForPlayOffs);
+new ShowInConsole('World Cup');

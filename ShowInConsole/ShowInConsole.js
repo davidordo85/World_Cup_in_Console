@@ -1,5 +1,7 @@
 import { teams } from '../teams/teams.js';
-import PointsBasedLeague from '../league/PointsBasedLeague.js';
+import PointsBasedLeague from '../tournaments/playoffs/league/PointsBasedLeague.js';
+import SchedulePlayoffs from '../tournaments/playoffs/playoffs/SchedulePlayoffs.js';
+
 import Letter from '../utils/numberToLetter.js';
 import shuffle from '../utils/shuffle.js';
 
@@ -112,5 +114,10 @@ export default class ShowInConsole {
         }
       });
     });
+    this.createPlayoffs();
+  }
+
+  createPlayoffs() {
+    new SchedulePlayoffs('playOffs', this.teamsForPlayOffs);
   }
 }

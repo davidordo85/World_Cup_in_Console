@@ -1,9 +1,11 @@
 import League from './League.js';
 
-export const LOCAL_TEAM = 0;
-export const AWAY_TEAM = 1;
+import {
+  LOCAL_TEAM,
+  AWAY_TEAM,
+} from '../../../teams/customizeTeams/CustomizeTeams.js';
 
-export default class Schedule extends League {
+export default class ScheduleLeague extends League {
   constructor(name, teams = [], config = {}) {
     super(name, teams, config);
   }
@@ -19,10 +21,6 @@ export default class Schedule extends League {
       }
       this.matchDaySchedule.push(matchDay);
     }
-  }
-
-  getTeamNames() {
-    return this.teams.map(team => team.name);
   }
 
   setLocalTeams() {

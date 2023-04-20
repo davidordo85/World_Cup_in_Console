@@ -1,7 +1,10 @@
-import Schedule from './Schedule.js';
+import ScheduleLeague from './ScheduleLeague.js';
 
-import { LOCAL_TEAM, AWAY_TEAM } from './Schedule.js';
-export default class PointsBasedLeague extends Schedule {
+import {
+  LOCAL_TEAM,
+  AWAY_TEAM,
+} from '../../../teams/customizeTeams/CustomizeTeams.js';
+export default class PointsBasedLeague extends ScheduleLeague {
   constructor(name, teams = [], config = []) {
     super(name, teams, config);
   }
@@ -14,6 +17,17 @@ export default class PointsBasedLeague extends Schedule {
       pointsLose: 0,
     };
     this.config = Object.assign(defaultConfig, config);
+  }
+
+  customizeTeam(teamName) {
+    const customizeTeam = super.customizeTeam(teamName);
+    return {
+      points: 0,
+      matchesWon: 0,
+      matchesDraw: 0,
+      matchesLost: 0,
+      ...customizeTeam,
+    };
   }
 
   generateGoals() {
