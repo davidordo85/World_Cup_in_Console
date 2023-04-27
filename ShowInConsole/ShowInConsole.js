@@ -12,7 +12,6 @@ export default class ShowInConsole {
     this.teamsForPlayOffs = [];
     this.teamsForThirdAndFourthPlace = [];
     this.startTournament();
-    //this.createPlayoffs();
   }
 
   organizeTeams() {
